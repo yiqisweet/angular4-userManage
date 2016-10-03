@@ -8,6 +8,7 @@ import { User } from '../../models/User'
 })
 export class UsersComponent implements OnInit {
 
+  //定义用户数组
   users:User[];
   totalOwed:number;
   constructor(
