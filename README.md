@@ -1,6 +1,6 @@
-# 用户管理系统
-<div style="text-align:center;"> 
-  
+
+<div> 
+ # 用户管理系统
 ![](https://img.shields.io/badge/node-v8.4.0-brightgreen.svg)
 &nbsp;&nbsp;&nbsp;&nbsp;
 ![](https://img.shields.io/badge/Angular-v4.0-brightgreen.svg)
@@ -31,7 +31,5 @@ ng serve
 
 参照我的JSONSERVER库
 
-```
-npm install -g json-server
-```
+
 
