@@ -27,5 +27,11 @@ ng serve
 
 
 ## JSON-SERVER
+配置本地json-server
 
- 
+参照我的JSONSERVER库
+
+```
+npm install -g json-server
+```
+
