@@ -1,5 +1,5 @@
 
-<div> 
+ 
  # 用户管理系统  
 ![](https://img.shields.io/badge/node-v8.4.0-brightgreen.svg)
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -10,7 +10,7 @@
 ![](https://img.shields.io/badge/bootstrap-v4.0.0-blue.svg)
 &nbsp;&nbsp;&nbsp;&nbsp;
 ![](https://img.shields.io/badge/jquery-v3.2.1-blue.svg)
-</div>
+ 
 
 
 ## 安装
