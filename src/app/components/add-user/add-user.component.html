@@ -1,3 +1,62 @@
-<p>
-  add-user works!
-</p>
+<div class="row">
+  <div class="col-md-6">
+    <a href="#" routerLink="/" class="btn btn-link"><i class="fa fa-arrow-circle-left"></i>返回首页</a>
+  </div>
+  <div class="col-md-6">
+    <!-- 自行设计 -->
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    添加用户
+  </div>
+  <div class="card-block">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">姓名</label>
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="user.name"
+          name="name"
+          minlength="2"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">邮箱</label>
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="user.email"
+          name="email"
+          minlength="2"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="phone">手机</label>
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="user.phone"
+          name="phone"
+          minlength="11"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="balance">收支</label>
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="user.balance"
+          name="balance"
+          [disabled]="disableBalanceOnAdd"
+        />
+      </div>
+      <input type="submit" value="添加" class="btn btn-primary">
+    </form>
+  </div>
+</div>

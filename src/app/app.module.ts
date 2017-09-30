@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+//引入路由
 import { RouterModule,Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+//组件
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { UsersComponent } from './components/users/users.component';
@@ -14,11 +18,15 @@ import { RegisterComponent } from './components/register/register.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { PageNotFountComponent } from './components/page-not-fount/page-not-fount.component';
 
+//引入服务
+import  {UserService } from './services/user.service'
+
 //设置路由
 const appRoutes:Routes = [
   {path : '',component:HomeComponent},
   {path : 'login',component:LoginComponent},
-  {path : 'register',component:RegisterComponent}
+  {path : 'register',component:RegisterComponent},
+  {path : 'add-user',component:AddUserComponent}
 ]
 
 @NgModule({
@@ -38,9 +46,11 @@ const appRoutes:Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
