@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map'
 
 @Injectable()
 export class UserService {
-
+//定义用户数组
   users = [];
 
   constructor(
